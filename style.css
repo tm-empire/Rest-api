@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito Sans;
+    font-size: 14px;
+}
+body{
+    background-color: #202c36;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    background-color: #2a3642;
+    color: white;
+}
+.head p:first-child{
+    font-weight: 700;
+}
+.light-mode{
+    cursor: pointer;
+}
+.fa-magnifying-glass{
+    color: white;
+}
+.searching-row{
+    margin-block: 2rem;
+    padding-inline: 4rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.search-bar{
+    max-width: 400px;
+    width: 100%;
+    background-color: #2a3642;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+}
+.search-bar input{
+    background-color: inherit;
+    color: white;
+    border: none;
+    margin-left: 8px;
+}
+.search-bar input:focus{
+    outline: none;
+}
+.search-bar input::placeholder{
+    color: white;
+}
+#region{
+     /* appearance: none; */
+    /* -webkit-appearance: none; */
+    /* -moz-appearance: none; */
+    background-color: #2a3642;
+    color: white;
+    border: none;
+    max-width: 140px;
+    padding-left: 0.8rem;
+    width: 100%;
+    border-radius: 5px;
+
+}
+#region:focus, #region:focus-visible, #region:active {
+    /* appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; */
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.content-container{
+    padding-inline: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.country-card{
+    max-width: 180px;
+    width: 100%;
+    min-height: 210px;
+    background-color: #2a3642;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+}
+.country-card img{
+    width: inherit;
+    max-height: 120px;
+}
+.country-details{
+    color: white;
+    font-size: 10px !important;
+    padding: 0.8rem;
+}
+.country-details p{
+    font-size: inherit;
+    margin-bottom: 3px;
+}
+.country-details .name{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+body.light .details-one h1,
+body.light .details-one p,
+body.light .details-two p,
+body.light .border-cont {
+    color: black;
+}
+
+body.light .border-cont a {
+    color: black;
+    background-color: white;
+}
+
+
+
+
+
+
+
+/* style of light mode */
+body.light{
+    background-color: hsl(0, 0%, 90%);
+}
+header.light{
+    background-color: hsl(0, 100%, 100%) !important;
+    color: black;
+}
+.search-bar.light{
+    background-color: hsl(0, 100%, 100%);
+    color: black;
+}
+.search-bar input.light{
+    background-color: hsl(0, 100%, 100%);
+    color: black;
+}
+.search-bar input.light::placeholder{
+    color: black;
+}
+.search-bar i.light{
+    background-color: hsl(0, 100%, 100%);
+    color: black;
+}
+.country-card.light{
+    background-color: hsl(0, 100%, 100%);
+    color: black;
+}
+.country-details.light{
+    background-color: hsl(0, 100%, 100%);
+    color: black;
+}
+
+
+
+
