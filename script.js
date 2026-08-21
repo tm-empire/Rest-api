@@ -7,7 +7,7 @@ let allCountryData;
 async function restApiCaller() {
     const response = await fetch(
         'https://api.restcountries.com/countries/v5?limit=100',
-        { headers: { 'Authorization': 'rc_live_e8b347150c0d4382b58fabdcf08d5cf0' } }
+        { headers: { 'Authorization': '${process.env.api_key}' } }
     );
     const data = await response.json();
     console.log(data.data)
@@ -166,7 +166,7 @@ regionFilter.addEventListener("change", (e) => {
 
 
         fetch(`https://api.restcountries.com/countries/v5?region=${e.target.value}&limit=100`,
-            { headers: { 'Authorization': 'Bearer rc_live_e8b347150c0d4382b58fabdcf08d5cf0' } }
+            { headers: { 'Authorization': 'Bearer ${process.env.api_key}' } }
         )
             .then(function (response) { return response.json(); })
             .then((data) => {
