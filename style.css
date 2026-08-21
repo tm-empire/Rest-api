@@ -118,7 +118,13 @@ body.light .border-cont a {
     background-color: white;
 }
 
-
+@media screen and (max-width: 720px){
+    .searching-row{
+        flec-direction: column;
+        gap: 10px;
+        
+    }
+}
 
 
 
