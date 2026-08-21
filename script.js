@@ -5,10 +5,8 @@ const searchInput = document.querySelector(".search-bar input")
 //declaring a variable to store all country data with let
 let allCountryData;
 async function restApiCaller() {
-    const response = await fetch(
-        'https://api.restcountries.com/countries/v5?limit=100',
-        { headers: { 'Authorization': '${process.env.api_key}' } }
-    );
+    const response = await fetch('/.netlify/functions/getCountries');
+    
     const data = await response.json();
     console.log(data.data)
     allCountryData = data.data.objects
