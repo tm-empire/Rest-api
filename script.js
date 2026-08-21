@@ -163,9 +163,6 @@ regionFilter.addEventListener("change", (e) => {
     else {
 
 
-        // fetch(`https://api.restcountries.com/countries/v5?region=${e.target.value}&limit=100`,
-        //     { headers: { 'Authorization': 'Bearer ${process.env.api_key}' } }
-        // )
         fetch(`/.netlify/functions/getCountries?region=${e.target.value}`)
             .then(function (response) { return response.json(); })
             .then((data) => {
