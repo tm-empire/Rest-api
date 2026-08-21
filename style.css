@@ -120,7 +120,7 @@ body.light .border-cont a {
 
 @media screen and (max-width: 720px){
     .searching-row{
-        flec-direction: column;
+        flex-direction: column;
         gap: 10px;
         
     }
