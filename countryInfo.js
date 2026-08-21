@@ -50,9 +50,6 @@ const borderCont = document.querySelector(".border-cont")
 
 if (array[10]) {
     array[10].map((element) => {
-        // fetch(`https://api.restcountries.com/countries/v5/codes.alpha_3/${element}`,
-        //     { headers: { 'Authorization': 'Bearer rc_live_e8b347150c0d4382b58fabdcf08d5cf0' } }
-        // )
          fetch(`/.netlify/functions/getCountries?code=${element}`)
             .then(function (response) { return response.json(); })
             .then(function (data) {
